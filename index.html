@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chetna Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&
+    display=swap" rel="stylesheet">
+    <Style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        body{
+            background-color: rgb(0,0,33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18,18,62);
+        }
+        nav ul{
+            display:flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(130, 130, 224);
+            font-size: 1.08rem;
+        }
+        
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 90px 0;
+            align-items: center;
+        }
+        .firstSection > div{
+            width: 40%;
+        }
+        .leftSection h1 {
+            font-size: 3rem;
+        }
+
+        .leftSection p {
+            font-size:  1.5rem;
+        }
+        .leftSection .btn{
+            padding: 20px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid;
+            border-radius: 6px;
+            font-size: 20px; 
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .rightSection img{
+            width: 70%;
+        }
+        main hr{
+            border: 0;
+            background:#9c97f1;
+            height: 1.2px;
+            margin: 20px 60px;
+        }
+
+        .sectionContainer {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .sectionContainer h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        strong{
+            color: rgb(130, 130, 224);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 130vh;
+        }
+        .secondSection h1{
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .secondSection .work-item {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background-color: rgb(18, 18, 62);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .work-item h2 {
+            font-size: 1.5rem;
+            color: rgb(130, 130, 224);
+        }
+
+        .work-item .company,
+        .work-item .timeline {
+            font-size: 1rem;
+            color: #b3b3b3;
+        }
+
+        .work-item p {
+            font-size: 1rem;
+            color: #b3b3b3;
+        }
+
+        .projects {
+            max-width: 80vw;
+            margin: auto;
+            padding-bottom: 40px;
+        }
+
+        .projects h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .project-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(18, 18, 62);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .project-item img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .project-item h2 {
+            font-size: 1.5rem;
+            color: rgb(130, 130, 224);
+            margin-bottom: 10px;
+        }
+
+        .project-item .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .btn-color-2 {
+            background-color: #008CBA;
+        }
+
+        .contactSection {
+            max-width: 80vw;
+            margin: auto;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .contactSection h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contactSection p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .contactSection a {
+            color: rgb(130, 130, 224);
+            text-decoration: none;
+        }
+
+        .contactSection a:hover {
+            text-decoration: underline;
+        }
+    </Style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class=" left"> Chetna's Portfolio</div>
+            <div class ="right">
+                <ul>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#experience">EXPERIENCE</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT ME</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class = "firstSection">
+            <div class = "leftSection">
+                <h1>Hi</h1>
+                <h1>I'm Chetna.</h1>
+                <h1>Front End Developer</h1>
+                <p>Welcome to my porfolio! I'm Chetna, a skilled and creative Front end developer with a passion for crating beautiful,
+                creative and user friendly websites.</p>
+                <div class = "button">
+                    <button class="btn"><a href ="https://docs.google.com/document/d/1M1kP3b5UjPZlJ6_3-IUyDJ_c05CSGqSQ/edit"> Download Resume</a></button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="image.jpeg" alt="">
+            </div>
+        </section>
+        <hr>
+
+                <section id="skills"  class="sectionContainer">
+                    <h1>Skills</h1>
+                    <div class="skills-list">
+                        <ul>
+                            <li><strong>Programming Languages:</strong> Java, Python, SQL, HTML/CSS, JavaScript, PHP</li>
+                            <li><strong>Libraries/Frameworks:</strong> REST API, React.js, Node.js, Pandas, PySpark</li>
+                            <li><strong>Tools & Software:</strong> Git, CI/CD, MS Excel, MySQL, PostgreSQL, MongoDB</li>
+                            <li><strong>Relevant Coursework:</strong> Data Structures, Software Engineering, Web Programming, Data
+                                Science, Data Mining</li>
+                        </ul>
+                    </div>
+                </section>
+        
+        <hr>
+
+        <Section id = "experience" class = "secondSection">
+            <span class = "text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="work-item">
+                <h2>Software Engineering Fellowship</h2>
+                <div class="company">Company Name</div>
+                <div class="timeline">July 2024 - Present</div>
+                <p>Participated in a fellowship program focused on software engineering. Gained hands-on experience in
+                    various technologies and worked on real-world projects.</p>
+            </div>
+            <div class="work-item">
+                <h2>Front End Developer</h2>
+                <div class="company">Productive Cloud Solutions</div>
+                <div class="timeline">June 2024 – Present</div>
+                <p>Developed responsive and interactive web applications using HTML, CSS, and JavaScript. Worked closely
+                    with designers to create user-friendly interfaces.</p>
+            </div>
+            <div class="work-item">
+                <h2>Quality Assurance Intern</h2>
+                <div class="company">LexisNexis</div>
+                <div class="timeline">May 2023 – August 2023</div>
+                <p>Worked on testing software applications, identifying bugs, and ensuring the quality of the products.
+                    Collaborated with developers to resolve issues.</p>
+            </div>
+            <div class="work-item">
+                <h2>Undergraduate Tutor</h2>
+                <div class="company">Georgia State University</div>
+                <div class="timeline">August 2021 - August 2023</div>
+                <p>Tutored undergraduate students in computer science courses, helping them understand complex concepts
+                    and improve their academic performance.</p>
+            </div>
+            <div class="work-item">
+                <h2>Student Assistant</h2>
+                <div class="company">Georgia State University</div>
+                <div class="timeline">September 2021 - April 2024</div>
+                <p>Assisted in administrative tasks and provided support to faculty members. Helped in organizing events
+                    and managing departmental resources.</p>
+            </div> 
+        </Section>
+        <hr>
+        <section id = "projects" class="projects">
+            <span class="text-gray">Browse My Recent</span>
+            <h1>Projects</h1>
+            <div class="project-item">
+                <img src="project-1.png" alt="Project One" class="project-img">
+                <h2 class="project-title">Project One</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/ChetnaAnjana/House_Price_Prediction-'">GitHub</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="project-2.png" alt="Project Tne" class="project-img">
+                <h2 class="project-title">Project Two</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/ChetnaAnjana/Property-Parteners'">GitHub</button>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id = "contact" class="contactSection">
+            <h1>Contact Me</h1>
+            <p>Email: <a href="mailto:chetnaanjana02@gmail.com">chetnaanjana02@gmail.com</a></p>
+            <p>Phone: <a href="tel:+14708156785">(470) 815-6785</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/chetna-anjana-695932206/" target="_blank">Chetna Anjana</a></p>
+            <p>GitHub: <a href="https://github.com/ChetnaAnjana" target="_blank">ChetnaAnjana</a></p>
+        </section>
+    </main>
+</body>
+</html>
