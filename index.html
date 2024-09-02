@@ -214,6 +214,50 @@
         .contactSection a:hover {
             text-decoration: underline;
         }
+
+                /* Container for the button */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        /* Styling for the anchor tag to look like a button */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect */
+        .btn:hover {
+            background-color: #0056b3;
+            text-decoration: none;
+        }
+
+        /* Focus effect for accessibility */
+        .btn:focus {
+            outline: 3px solid #0056b3;
+            outline-offset: 2px;
+        }
+
+        /* Optional: Make the button container responsive */
+        @media (max-width: 600px) {
+            .btn {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+
     </Style>
 </head>
 <body>
@@ -238,12 +282,14 @@
                 <h1>Front End Developer</h1>
                 <p>Welcome to my porfolio! I'm Chetna, a skilled and creative Front end developer with a passion for crating beautiful,
                 creative and user friendly websites.</p>
-                <div class = "button">
-                    <button class="btn"><a href ="https://docs.google.com/document/d/1M1kP3b5UjPZlJ6_3-IUyDJ_c05CSGqSQ/edit"> Download Resume</a></button>
-                </div>
+            <div class="button-container">
+                <a href="https://docs.google.com/document/d/1M1kP3b5UjPZlJ6_3-IUyDJ_c05CSGqSQ/edit" class="btn">
+                    Download Resume
+                </a>
+            </div>
             </div>
             <div class="rightSection">
-                <img src="image.jpeg" alt="">
+                <img src="IMG_0614.JPG" alt="">
             </div>
         </section>
         <hr>
@@ -252,11 +298,11 @@
                     <h1>Skills</h1>
                     <div class="skills-list">
                         <ul>
-                            <li><strong>Programming Languages:</strong> Java, Python, SQL, HTML/CSS, JavaScript, PHP</li>
-                            <li><strong>Libraries/Frameworks:</strong> REST API, React.js, Node.js, Pandas, PySpark</li>
+                            <li><strong>Programming Languages:</strong> Java, Python, SQL, HTML/CSS, JavaScript, PHP, C#</li>
+                            <li><strong>Libraries/Frameworks:</strong> REST API, React.js, NextJS, Node.js, Pandas, PySpark</li>
                             <li><strong>Tools & Software:</strong> Git, CI/CD, MS Excel, MySQL, PostgreSQL, MongoDB</li>
-                            <li><strong>Relevant Coursework:</strong> Data Structures, Software Engineering, Web Programming, Data
-                                Science, Data Mining</li>
+                            <li><strong>Relevant Coursework:</strong> Data Structures, OOPS, Software Engineering, Web Programming, Data
+                                Science, Data Mining, Operating System, Software Testing</li>
                         </ul>
                     </div>
                 </section>
@@ -308,7 +354,7 @@
             <h1>Projects</h1>
             <div class="project-item">
                 <img src="project-1.png" alt="Project One" class="project-img">
-                <h2 class="project-title">Project One</h2>
+                <h2 class="project-title">House Price Prediction</h2>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn"
                         onclick="location.href='https://github.com/ChetnaAnjana/House_Price_Prediction-'">GitHub</button>
@@ -316,10 +362,42 @@
             </div>
             <div class="project-item">
                 <img src="project-2.png" alt="Project Tne" class="project-img">
-                <h2 class="project-title">Project Two</h2>
+                <h2 class="project-title">Property Parteners</h2>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn"
                         onclick="location.href='https://github.com/ChetnaAnjana/Property-Parteners'">GitHub</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="project3.png" alt="Project Tne" class="project-img">
+                <h2 class="project-title">AI Flashcard Generator</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/ChetnaAnjana/AI-Flashcards'">GitHub</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="project4.png" alt="Project Tne" class="project-img">
+                <h2 class="project-title">AI Trip Planner</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/ChetnaAnjana/AI-Trip-Planner'">GitHub</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="project5.png" alt="Project Tne" class="project-img">
+                <h2 class="project-title">Pantry Tracker</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/ChetnaAnjana/Pantry_Tracker'">GitHub</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="project6.png" alt="Project Tne" class="project-img">
+                <h2 class="project-title">GitHub Scrapper</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/ChetnaAnjana/GitHub-Scrapper'">GitHub</button>
                 </div>
             </div>
         </section>
